@@ -1,0 +1,305 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+header h1.logo {
+  font-size: 35px;
+  font-weight: bold;
+  /* Agregar propiedad de display */
+  display: inline-block;
+  /* Agregar propiedad de line-height */
+  line-height: 80px;
+  padding: 0 50px;
+  color: #eea20a;
+}
+
+header nav {
+  /* Agregar propiedad de float */
+  float: right;
+}
+
+nav ul li {
+  /* Agregar propiedad de display */
+  display: inline-block;
+  margin-right: 40px;
+  /* Agregar propiedad de line-height */
+  line-height: 80px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #f0ec0c;
+}
+/* De aqui para abajo yo le agregado yo */
+.fuente-acento {
+  color: #ea9f0a;
+}
+.fuente-centro {
+  color: blue;
+}
+footer {
+  background-color: rgb(11, 5, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.alinear-centro {
+  text-align: center;
+}
+.contenedor {
+  background-color: whitesmoke;
+  height: 60vh;
+  margin: 5px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.espaciotitulos {
+  margin-right: auto;
+  line-height: 80px;
+  margin-bottom: -60px;
+  padding: 50px;
+}
+/* Esto coloca una imgen de fondo a toda la pagina 
+body {
+  background-image: url(img/paisajenic.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+*/
+.imagenlarga img {
+  width: 100%;
+}
+.menu-fixed {
+  position: fixed;
+  top: 15px;
+}
+main {
+  border-style: dotted;
+  padding: 0px;
+}
+.item-relativetexto {
+  display: block;
+  position: relative;
+  top: 95px;
+  left: -262px;
+  height: 122px;
+  width: 718px;
+}
+.item-absoluteimg {
+  display: block;
+  position: absolute;
+  top: 95px;
+  left: 865px;
+  height: 50px;
+}
+.containermi {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  flex-wrap: wrap;
+  background-color: #ea9f0a;
+}
+.card {
+  border: 4px dotted teal;
+  border-radius: 5%;
+  padding: 5px;
+  height: 400px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.image-container-card {
+  border: 4px dotted teal;
+  border-radius: 5%;
+  width: 100%;
+}
+/* MENU */
+#check {
+  display: none;
+}
+.checkbtn {
+  font-size: 25px;
+  color: rgb(234, 241, 243);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  header {
+    background-color: #f0ec0c;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ .checkbtn {
+    color: #2c3e50;
+  }
+}
+
+/* ESTO ES LA PARTE DEL FORMULARIO */
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+  .form-row textarea {
+    width: 250px;
+  }
+  .form-row button {
+    margin-left: 120px;
+  }
+}

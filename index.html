@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">MY FIRST WEB</h1>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#infopersonal">ACERCA DE MI</a></li>
+          <li><a href="#estudios">ESTUDIOS</a></li>
+          <li><a href="#apartado-redessociales">REDES SOCIALES</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="infopersonal"></div>
+      <div class="containermi">
+        <div class="item-relativetexto">
+          <div class="image-container-card">
+            <h4 class="fuente-centro" align="center">ACERCA DE MI</h4>
+            <p>¡Bienvenido a mi primer pagina web!, un breve resumen de mi.</p>
+            <p>
+              Mi nombre es Francisco Silva Gomez, soy de Nicaragua y vivo en la
+              capital de Managua, Me gustan el futbol americano, ver series,
+              salir a pasear con mi hija. Aunque estudié Ing en Sistemas, nunca
+              ejerce la carrera siempre quise poder practicar la programación,
+              ahora con este curso en EGG, podre darle paso a este anhelo.
+            </p>
+          </div>
+        </div>
+        <div class="item-absoluteimg">
+          <div class="image-container-card">
+            <img src="img/yoreducida.jpeg" />
+          </div>
+        </div>
+      </div>
+      <div class="imagenlarga">
+        <img src="img/vialactea.jpg" />
+      </div>
+      <div class="contenedor">
+        <figure>
+          <h2>Libro de Ingles</h2>
+          <img src="img/oxford.jpg" />
+          <p align="left">
+            Este es un libro de la prestigiosa acamdemia de Oxford para estudiar
+            Ingles.
+          </p>
+        </figure>
+        <h4 id="estudios" class="fuente-centro" align="center">
+          APRENDE INGLES
+        </h4>
+        <figure>
+          <h3>Estudio Inicial</h3>
+          <img src="img/basicen.jpg" />
+          <p>Esta es otra buena opcion para inciar tu aprendisaje en Ingles</p>
+        </figure>
+      </div>
+    </main>
+    <footer id="apartado-redessociales" class="form-header">
+      <h1>Contacto</h1>
+      <p><em>¡Esperamos tu consulta!</em></p>
+
+      <form action="" method="get" class="formulario" id="form">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="pepe@gmail.com"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" id="submit">Enviar</button>
+        </div>
+        <p class="alertas" id="alertas"></p>
+      </form>
+
+      <h3 class="fuente-acento">Redes Sociales</h3>
+      <nav>
+        <ul>
+          <li><a href="https://wa.me/50587882794">Contacto de Whatsapp</a></li>
+          <li><a href="https://www.facebook.com">FaceBook</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">TikTok</a></li>
+          <l><a href="index.html">Return</a></l>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
