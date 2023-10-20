@@ -303,3 +303,7 @@ main {
     margin-left: 120px;
   }
 }
+.greeting {
+  font-size: large;
+  color: blue;
+}
